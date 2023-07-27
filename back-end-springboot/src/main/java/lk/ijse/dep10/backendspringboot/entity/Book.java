@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Book {
+public class Book extends SuperEntity {
 
     private String isbn;
     private String title;

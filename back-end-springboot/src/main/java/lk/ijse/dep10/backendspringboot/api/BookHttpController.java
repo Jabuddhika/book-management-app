@@ -12,14 +12,14 @@ import java.util.List;
 @RequestMapping("/api/v1/books")
 public class BookHttpController {
 
-    @GetMapping
-    public List<BookDTO> getAllBooks() throws Exception {
-        return bookBO.getAllBooks();
-    }
-
-    @PostMapping(consumes = "application/json")
-    @ResponseStatus(HttpStatus.CREATED)
-    public void saveBook(@RequestBody @Valid BookDTO bookDTO) throws Exception {
-        bookBO.saveBook(bookDTO);
-    }
+//    @GetMapping
+//    public List<BookDTO> getAllBooks() throws Exception {
+//        return bookBO.getAllBooks();
+//    }
+//
+//    @PostMapping(consumes = "application/json")
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public void saveBook(@RequestBody @Valid BookDTO bookDTO) throws Exception {
+//        bookBO.saveBook(bookDTO);
+//    }
 }
