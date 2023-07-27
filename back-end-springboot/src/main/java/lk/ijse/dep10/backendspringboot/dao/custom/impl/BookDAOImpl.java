@@ -6,10 +6,12 @@ import static lk.ijse.dep10.backendspringboot.dao.util.Mapper.*;
 import lk.ijse.dep10.backendspringboot.entity.Book;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class BookDAOImpl implements BookDAO {
 
     private final JdbcTemplate jdbcTemplate;
