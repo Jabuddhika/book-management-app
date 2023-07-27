@@ -24,6 +24,7 @@ public class BookBOImpl implements BookBO {
         this.bookDAO = bookDAO;
     }
 
+    @Transactional(readOnly = true)
     @Override
     public List<BookDTO> getAllBooks() throws Exception {
         return bookDAO.findAll().stream().map(transformer::fromBookEntity).collect(Collectors.toList());
