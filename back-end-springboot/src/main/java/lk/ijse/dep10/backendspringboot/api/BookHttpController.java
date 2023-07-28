@@ -22,6 +22,7 @@ public class BookHttpController {
 
     @GetMapping
     public List<BookDTO> getAllBooks() throws Exception {
+        System.out.println("get");
        return bookBO.getAllBooks();
    }
 
